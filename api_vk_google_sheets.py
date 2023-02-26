@@ -54,7 +54,7 @@ post_id = ','.join(df['id'].astype("str"))
 response = requests.get('https://api.vk.com/method/stats.getPostReach',
 params={'access_token': TOKEN_USER,
         'v': VERSION,
-        'owner_id': -84884766,
+        'owner_id': # ваш owner_id,
         'post_ids': post_id})
 
 data = response.json()['response']
